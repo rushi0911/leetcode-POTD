@@ -2,12 +2,16 @@ class Solution {
 public:
     int numIdenticalPairs(vector<int>& nums) {
         int n = nums.size();
+        unordered_map<int,int>mp;
+        for(auto it:nums){
+            mp[it]++;
+        }
         int cnt=0;
-        for(int i=0;i<n-1;i++){
-            for(int j=i+1;j<n;j++){
-                if(nums[j]==nums[i]){
-                    cnt++;
-                }
+        for(auto it:mp){
+            if(it.second>1){
+                int x = it.second-1;
+                int sum = x*(x+1)/2;
+                cnt+=sum;
             }
         }
         return cnt;
