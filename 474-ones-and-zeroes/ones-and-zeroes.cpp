@@ -5,10 +5,8 @@ public:
             return -1e9;
         }
         if(idx == vec.size()){
-            if(sum0 <= m && sum1 <= n){
-                return 0;
-            }
-            return -1e9;
+            
+            return 0;
         }
         if(dp[idx][sum0][sum1] != -1){
             return dp[idx][sum0][sum1];
