@@ -14,10 +14,14 @@ public:
                 }
                 i++;
             }
-            if(mp['0']==0 ){
+            // cout<<"i->"<<i<<endl;
+            // cout<<"j->"<<j<<endl;
                 ans = (ans%1000000007 + (j-i+1)%1000000007)%1000000007;
-                cout<<ans<<endl;
-            }
+            // if(mp['1']){
+            //     cout<<j<<endl;
+            //     cout<<"i->"<<i<<endl;
+            //     // cout<<ans<<endl;
+            // }
             j++;
         }
         return ans%1000000007;
