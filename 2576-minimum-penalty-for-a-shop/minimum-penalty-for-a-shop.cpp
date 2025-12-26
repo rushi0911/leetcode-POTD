@@ -9,9 +9,6 @@ public:
         }
         // mini = mp['Y'];
         int mini_idx = 0;
-        if(mp['Y'] == 0){
-            return 0;
-        }
         int mini = mp['Y'];
         bool flag = false;
         for(int i=0;i<n;i++){
