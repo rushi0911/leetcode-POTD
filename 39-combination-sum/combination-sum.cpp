@@ -1,10 +1,12 @@
 class Solution {
 public:
     void solve(int idx,int n,vector<int>& candidates,vector<int>& temp,vector<vector<int>>&ans, int target){
-        if(idx == n){
-            if(target == 0){
+        if(target == 0){
                 ans.push_back(temp);
+                return;
             }
+        if(idx == n){
+            
             return ;
         }
         if(target >= candidates[idx]){
