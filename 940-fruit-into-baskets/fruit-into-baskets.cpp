@@ -8,7 +8,7 @@ public:
         while(j<n){
             mp[s[j]]++;
             if(mp.size()>2){
-                maxi = max(maxi,j-i);
+                // maxi = max(maxi,j-i);
                 while(mp.size()>2){
                     mp[s[i]]--;
                     if(mp[s[i]] == 0) mp.erase(s[i]);
