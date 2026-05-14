@@ -5,8 +5,9 @@ public:
         priority_queue<int>max_heap;
         for(auto it:nums){
             max_heap.push(it);
-        }  
-        for(int i=0;i<k-1;i++){
+        }
+        k--;
+        while(k--){
             max_heap.pop();
         }
         return max_heap.top();
