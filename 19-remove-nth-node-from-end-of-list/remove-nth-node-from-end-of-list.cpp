@@ -25,7 +25,7 @@ public:
             slow = slow -> next;
             fast = fast ->next;
         }
-        if(n == 1) slow ->next = fast;;
+        // if(n == 1) slow ->next = fast;;
         slow ->next = slow->next->next;
         return head;
     }
